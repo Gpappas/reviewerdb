@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Reviews: <%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'scaffold', 'reviewer' %>
+</head>
+<body>
+  <div id="banner">
+    <%= @page_title || "The TechComm Article Reviewer" %>
+  </div>
+  <div id="columns">
+    <div id="side">
+      <a href="">Search/sort</a><br />
+      <%= link_to 'Add new', new_review_path(@review) %><br />
+      <%= link_to 'List all', reviews_path %><br />
+    </div>
+    <div id="main">
+      <%= yield :layout %>
+    </div>
+  </div>
+</body>
+</html>

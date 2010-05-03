@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  Date: MyString
+  Reviewer: MyString
+  Author: MyString
+  Title: MyString
+  Summary: MyString
+  Rating: 
+  Topic: MyString
+  Keywords: MyString
+
+two:
+  Date: MyString
+  Reviewer: MyString
+  Author: MyString
+  Title: MyString
+  Summary: MyString
+  Rating: 
+  Topic: MyString
+  Keywords: MyString

@@ -1,0 +1,40 @@
+<div id="show">
+  <h1>Full Entry View</h1>
+<p>
+  <b>Title:</b>
+  <%=h @review.Title %>
+</p>
+<p>
+  <b>Year published:</b>
+  <%=h @review.Date %>
+</p>
+
+<p>
+  <b>Author:</b>
+  <%=h @review.Author %>
+</p>
+<p>
+  <b>Topic:</b>
+  <%=h @review.Topic %>
+</p>
+
+<p>
+  <b>Keywords:</b>
+  <%=h @review.Keywords %>
+</p>
+<p>
+  <b>Summary:</b>
+  <%=h @review.Summary %>
+</p>
+<p>
+  <b>Rating:</b>
+  <%=h @review.Rating %>
+</p>
+<p>
+  <b>Reviewed by:</b>
+  <%=h @review.Reviewer %>
+</p>
+</div>
+
+<%= link_to 'Edit', edit_review_path(@review) %> |
+<%= link_to 'Back', reviews_path %>

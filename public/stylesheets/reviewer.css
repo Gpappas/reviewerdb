@@ -1,0 +1,186 @@
+/* Global styles */
+
+h1 {
+        font:  180% sans-serif;
+        color: #333333;
+        border-bottom: 4px solid #333333;   
+}
+
+body {
+		background:	#CCCCCC;
+}
+
+
+/* Styles for reviews/index */
+
+#reviews-list table {
+        border-collapse: collapse;
+}
+
+#reviews-list table tr td th {
+        padding: 5px;
+        vertical-align: top;
+}
+
+#reviews-list .list-headings {
+  width:        125px;
+
+}
+
+#reviews-list .list-headings dl {
+        margin: 0;
+}
+
+#reviews-list .list-headings dt {
+	color:        #333333;
+	font-weight:  bold;
+}
+
+#reviews-list .list-headings dd {
+        margin: 0;
+}
+
+#reviews-list .list-description {
+  width:        60%;
+}
+
+#reviews-list .list-description dl {
+        margin: 0;
+}
+
+#reviews-list .list-description dt {
+	color:        #333333;
+	font-weight:  bold;
+	font-size:    larger;
+}
+
+#reviews-list .list-description dd {
+        margin: 0;
+}
+
+#reviews-list .list-actions {
+  font-size:    small;
+  text-align:   right;
+  padding-left: 1em;
+}
+
+#reviews-list .list-line-even {
+  background:   #E6FAFF;
+}
+
+#reviews-list .list-line-odd {
+  background:   #B2F0FF;
+}
+
+/* START:mainlayout */
+/* Styles for main page */
+
+#banner {
+  background:	#333333;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 5px solid #666666;
+  font: small-caps 40px/40px "Times New Roman", serif;
+  color: #19D1FF;
+  text-align: center;
+}
+
+#banner img {
+  float: left;
+}
+
+#columns {
+  background: #666666;
+}
+
+#main {
+  margin-left: 13em;
+  padding-top: 4ex;
+  padding-left: 2em;
+  background: #CCCCCC;
+}
+
+#side {
+  float: left;
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-bottom: 1em;
+  width: 12em;
+  background: #666666;
+}
+
+#side a {
+  color: #19D1FF;
+  font-size: medium;
+  line-height: 2;
+}
+/* END:mainlayout */
+
+/* An entry in the show view */
+
+#show  div {
+  overflow: auto;
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-right: 2em;
+}
+
+#show  .title {
+  font-size: 120%;
+  font-family: sans-serif;
+}
+
+
+#show .entry h3 {
+ margin-top: 0;
+ margin-bottom: 5px;
+ color: #227;
+}
+
+#show .entry p {
+ margin-top: 0.5em; 
+ margin-bottom: 0.8em; 
+}
+
+
+/* The error box */
+
+.fieldWithErrors {
+  padding: 2px;
+  background-color: #EEFFEE;
+  display: inline;
+}
+
+.fieldWithErrors * {
+  background-color: red;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: square;
+}

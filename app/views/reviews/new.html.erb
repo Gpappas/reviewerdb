@@ -1,0 +1,43 @@
+<div id="show">
+<h1>Add new review</h1>
+<% form_for(@review) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :Reviewer %><br />
+    <%= f.text_field :Reviewer %>
+  </p>
+    <p>
+    <%= f.label :Date %><br />
+    <%= f.text_field :Date %>
+  </p>
+  <p>
+    <%= f.label :Author %><br />
+    <%= f.text_field :Author %>
+  </p>
+  <p>
+    <%= f.label :Title %><br />
+    <%= f.text_field :Title %>
+  </p>
+  <p>
+    <%= f.label :Summary %><br />
+    <%= f.text_field :Summary %>
+  </p>
+  <p>
+    <%= f.label :Rating %><br />
+    <%= f.text_field :Rating %>
+  </p>
+  <p>
+    <%= f.label :Topic %><br />
+    <%= f.text_field :Topic %>
+  </p>
+  <p>
+    <%= f.label :Keywords %><br />
+    <%= f.text_field :Keywords %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+</div>
+<%= link_to 'Back', reviews_path %>

@@ -1,0 +1,34 @@
+<div id="reviews-list">
+  <h1>Reviews Listing</h1>
+
+  <table>
+  <% @reviews.each do |review| %>
+
+    <tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
+	<td class="list-headings">
+    	<dt>Title:</dt>
+		<dt>Year published:</dt>
+    	<dt>Author:</dt>
+		<dt>Topic:</dt>
+    	<dt>Keywords:</dt>
+    	<dt>Summary:</dt>
+	</td>
+	<td class="list-description">
+          <dt><%=h review.Title %></dt>
+          <dt><%=h review.Date %></dt>
+          <dt><%=h review.Author %></dt>
+          <dt><%=h review.Topic %></dt>
+          <dt><%=h review.Keywords %></dt>
+          <dd><%=h truncate(review.Summary.gsub(/<.*?>/,''),
+                 :length => 135) %> (more)</dd>
+      </td>
+
+      <td class="list-actions">
+        <%= link_to 'Show', review %><br/>
+        <%= link_to 'Edit', edit_review_path(review) %><br/>
+        <%= link_to 'Destroy', review, 
+                    :confirm => 'Are you sure?',
+                    :method => :delete %>
+      </td>
+    </tr>
+  <% end %>
